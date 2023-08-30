@@ -6,6 +6,7 @@ package ReadingAssignments.RA3;
 public class Clock {
     private int minutesFromMidnight;
 
+    private int something;
     public int getMFM(){
         return minutesFromMidnight;
     }
