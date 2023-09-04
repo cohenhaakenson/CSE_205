@@ -1,15 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        
-        int age = 3;
-        String fname = "bob";
-        String lname = "smith";
-        int inches = 67;
-        System.out.printf("Mr. %s (first name %s) is %d inches tall and %d years old",
-                   fname, lname, age, inches);
-
-                   int[] my_array = {1, 2, 3, 4, 5};
-    }
+        Foo x = new Foo(8), y = new Foo(47);
+y.i = x.i;
+y.i = 88;
+System.out.println(x.i);
+                        }
 
 
     
