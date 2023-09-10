@@ -1,5 +1,5 @@
 class Foo {
-    public int i = 56;
+    public int i = 48;
 
     public Foo(int i) {
         this.i = i;

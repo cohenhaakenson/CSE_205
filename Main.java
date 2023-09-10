@@ -1,10 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        Foo x = new Foo(8), y = new Foo(47);
-y.i = x.i;
-y.i = 88;
-System.out.println(x.i);
-                        }
+        int x = 98, y = 28;
+        y = 85;
+        x = y;
+        System.out.println(x);
+
+
+}
 
 
     
