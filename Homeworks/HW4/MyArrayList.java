@@ -86,13 +86,6 @@ public class MyArrayList implements MyList {
      */
     @Override
     public void insertAt(int index, Object o) throws NoSuchElementException {
-        /*
-         * try {
-         * 
-         * } catch (Exception e) {
-         * throw new NoSuchElementException("INVALID INDEX", e);
-         * }
-         */
 
         if (index > size || index < 0) {
             throw new NoSuchElementException();
@@ -103,6 +96,8 @@ public class MyArrayList implements MyList {
             makeCapacity(capacity * 2);
         }
 
+        // starting at end of array (first empty element) down to the index, 
+        // move previous item to i
         for (int i = size; i > index; i--) {
             storage[i] = storage[i - 1];
         }
@@ -111,6 +106,7 @@ public class MyArrayList implements MyList {
         size++;
 
     }
+
 
     /*
      * Removes an Object at index
